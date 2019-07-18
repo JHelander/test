@@ -18,11 +18,12 @@ html {
 body {
     margin: 0;
     padding: 0;
+    overscroll-behavior: contain;
 }
 
 main {
     height: 100vh;
-    overflow: hidden;overscroll-behavior: none;
+    overflow: hidden;
 }
 section {
     position: relative;
