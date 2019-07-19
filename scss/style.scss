@@ -146,22 +146,51 @@
 
 //---------------------
 // Slides sections
+.overlay-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .92;
+    background-image: linear-gradient(to top, #00386b, #003e77, #004584, #004b90, #00529d, #00529d, #00529d, #00529d, #004b90, #004584, #003e77, #00386b);
+}
+.overlay-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .92;
+    background-image: linear-gradient(to top, #1ecfb8, #00c4ce, #00b8e0, #00a8ea, #0096ea, #0087dd, #0078d0, #0469c2, #015cab, #005095, #004480, #00386b);
+}
+.overlay-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .92;
+    background-image: linear-gradient(to top, #da7b13, #dc8210, #dd890e, #df900c, #e0970a, #d2a20c, #c2ac19, #b3b52a, #90c04d, #6cc872, #46cc96, #1ecfb8);
+}
 .section-1 {
-    background-image: url('../assets/images/section1.png'), linear-gradient(to top, #00386b, #003e77, #004584, #004b90, #00529d, #00529d, #00529d, #00529d, #004b90, #004584, #003e77, #00386b);
+    background-image: url('../assets/images/section1.png');
     position: relative;
-    background-blend-mode: multiply;
-    filter: brightness(140%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
     
 }
 .section-2 {
-    background-image: url('../assets/images/section2.png'), linear-gradient(to top, #1ecfb8, #00c4ce, #00b8e0, #00a8ea, #0096ea, #0087dd, #0078d0, #0469c2, #015cab, #005095, #004480, #00386b);
+    background-image: url('../assets/images/section2.png');
     position: relative;
-    background-blend-mode: multiply;
     background-position: center;
     background-repeat: no-repeat;
 }
 .section-3 {
-    background-image: url('../assets/images/section3.png'), linear-gradient(to top, #da7b13, #dc8210, #dd890e, #df900c, #e0970a, #d2a20c, #c2ac19, #b3b52a, #90c04d, #6cc872, #46cc96, #1ecfb8);
+    background-image: url('../assets/images/section3.png');
     position: relative;
     background-blend-mode: multiply;
     background-position: right;
@@ -188,6 +217,8 @@
 // Story text
 .story {
     position: relative;
+    top: 40%;
+    transform: translateY(-50%);
 
     &:after {
         content: "";
@@ -196,9 +227,9 @@
         position: absolute;
         background: #fff;
         z-index: 3;
-        width: 16%;
+        width: 8%;
         height: .3em;
-        bottom: 1.6em;
+        bottom: -0.5em;
         left: 50%;
         transform: translate(-50%);
         @media (min-width: 250px) and (max-width: 670px) {
