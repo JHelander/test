@@ -24,7 +24,7 @@
     text-transform: uppercase;
     @media (min-width: 250px) and (max-width:670px) {
         font-size: 1.1em;  
-        max-width: 95%;
+        max-width: 80%;
     }
     @media (min-width: 671px) and (max-width: 1024px) {
         font-size: 1.2em;
@@ -227,13 +227,13 @@
         position: absolute;
         background: #fff;
         z-index: 3;
-        width: 8%;
+        width: 10%;
         height: .3em;
         bottom: -0.5em;
         left: 50%;
         transform: translate(-50%);
         @media (min-width: 250px) and (max-width: 670px) {
-            bottom: 0.5em;
+            bottom: -0.5em;
             height: .2em;
         }
     }
