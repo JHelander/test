@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,600,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700&display=swap');
 
-$primary-color: #fff;
 
+
+* {box-sizing: border-box;}
+
+html, body {
+    font-family: 'Montserrat';
+    position: relative;
+    line-height: 1.15;
+    font-size: 10px;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+
+//---------------------
+// Styleguide
+$primary-color: #fff;

@@ -12,22 +12,34 @@
 
 	</head>
 <body>
-	
+
 <!-- Swiper -->
 <div class="swiper-container">
+	
 	<div class="swiper-wrapper">
+		<header>
+			<nav class="navbar">
+				<h1 class="navbar-logo">Logo</h1>
+				<div style="display:flex; align-items: center;">
+					<li style="margin-right: 1em;"> Meny</li>
+					<div class="navbar-toggle" onclick="toggleMenu()">
+						<span class="navbar-burger navbar-line1"></span>
+						<span class="navbar-burger navbar-line2"></span>
+						<span class="navbar-burger navbar-line3"></span>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<div class="navbar-menu">
+			<ul class="navbar-menu-items">
+				<li><a href="about.html">Om Oss</a></li>
+				<li><a href="contact.html">Kontakta Oss</a></li>
+				<li><a href="privacy.html">Privacy</a></li>
+			</ul>
+		</div>
 
 		<div class="swiper-slide section-1">
-			<header>
-				<nav class="navbar">
-					<h1 class="navbar-logo">Logo</h1>
-					<div class="navbar-menu">
-						<span class="navbar-burger line1"></span>
-						<span class="navbar-burger line2"></span>
-						<span class="navbar-burger line3"></span>
-					</div>
-				</nav>
-			</header>
+			
 			<img 
 				class="birds"
 				src="/assets/images/3birds-1.png" alt=""
@@ -36,27 +48,27 @@
 				position: absolute;
 				top: 10%;
 				right: 20%;
-				"
-			>
-			<div class="story" data-swiper-parallax="-200" data-swiper-parallax-scale="0.15" data-swiper-parallax-opacity="0" >
+			">
+			<div class="story" data-swiper-parallax="100"  data-swiper-parallax-opacity="0" >
 				<h1 class="story-title">
-					<span class="story-cursive-lined" >We're</span>
-					all
-					<span class="story-bold" data-swiper-parallax="-40%">mad</span>
-					<span class="story-cursive-lined">here</span>
+					<span class="story-cursive-lined effects" >Vi</span>
+					är
+					<span class="story-bold" data-swiper-parallax="-40%">3Little</span>
+					<span class="story-cursive-lined">Birds</span>
 				</h1>
 			</div>
 		</div>
 		<div class="swiper-slide section-2">
-			<img src="/assets/images/3birds-1.png" alt=""
-			style="
-			width: 300px;
-			position: absolute;
-			top: 10%;
-			right: 20%;
-			"
-			>
-			<div class="story-right">
+			<img 
+				class="birds2"
+				src="/assets/images/3birds-1.png" alt=""
+				style="
+				width: 300px;
+				position: absolute;
+				top: 30%;
+				left: 20%;
+			">
+			<div class="story-right" data-swiper-parallax="-150" data-swiper-parallax-opacity="0">
 				<blockquote style="right:0;"></blockquote>
 				<h1 class="story-title">
 					There were
@@ -78,15 +90,16 @@
 			</div>
 		</div>
 		<div class="swiper-slide section-3">
-			<img src="/assets/images/3birds-1.png" alt=""
-			style="
-			width: 300px;
-			position: absolute;
-			top: 10%;
-			right: 20%;
-			"
-			>
-			<div class="story-left">
+			<img 
+				class="birds3"
+				src="/assets/images/3birds-1.png" alt=""
+				style="
+				width: 300px;
+				position: absolute;
+				top: 20%;
+				right: 20%;
+			">
+			<div class="story-left" data-swiper-parallax="-150" data-swiper-parallax-opacity="0">
 				<blockquote style="left:0;"></blockquote>
 				<h1 class="story-title">
 					<span class="story-cursive-lined">Would</span>
@@ -120,6 +133,7 @@
 </div>
 
 <!-- Swiper JS -->
+<script src="./lib/main.js"></script>
 <script src="./lib/swiper.min.js"></script>
 
 <!-- Initialize Swiper -->
@@ -134,20 +148,24 @@ var swiper = new Swiper('.swiper-container', {
 	freeModeMomentum: true,
 	longSwipes: true,
 	longSwipesRatio: 0.1,
-	spaceBetween: 0,
 	scrollbar: true,
-	scrollbarHide: true,
 	scrollbarDraggable: true,
 	scrollbarSnapOnRelease: true,
 	parallax: true,
-	slide: {
-		crossFade: true
-	},
+	effect: 'fade',
+	fadeEffect: {
+    crossFade: true
+  },
+	
+
+
 	pagination: {
 		el: '.swiper-pagination',
 		clickable: true,
 	},
+	
 });
+
 </script>
 </body>
 </html>
