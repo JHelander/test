@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Swiper demo</title>
+		<title>3Little Birds Konsulting</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
 		<!-- Link Swiper's CSS -->
@@ -12,131 +12,135 @@
 
 	</head>
 <body>
+<!-- Site loader -->
+<div class="loader">
+	<span></span>
+	<span></span>
+	<span></span>
+</div>
+	<!-- Swiper -->
+	<div class="main swiper-container">
+		<div class="swiper-wrapper">
+			<header>
+				<nav class="navbar">
+					<a href="index.html" class="navbar-logo"><img src="./assets/images/logo.png" alt="Logo"></a>
+					<div style="display:flex; align-items: center;">
+						<li style="margin-right: 1em;"> Meny</li>
+						<div class="navbar-toggle" onclick="toggleMenu()">
+							<span class="navbar-burger navbar-line1"></span>
+							<span class="navbar-burger navbar-line2"></span>
+							<span class="navbar-burger navbar-line3"></span>
+						</div>
+					</div>
+				</nav>
+			</header>
+			<div class="navbar-menu">
+				<ul class="navbar-menu-items">
+					<li><a href="about.html">Om Oss</a></li>
+					<li><a href="contact.html">Kontakta Oss</a></li>
+					<li><a href="privacy.html">Privacy</a></li>
+				</ul>
+			</div>
 
-<!-- Swiper -->
-<div class="swiper-container">
-	
-	<div class="swiper-wrapper">
-		<header>
-			<nav class="navbar">
-				<h1 class="navbar-logo">Logo</h1>
-				<div style="display:flex; align-items: center;">
-					<li style="margin-right: 1em;"> Meny</li>
-					<div class="navbar-toggle" onclick="toggleMenu()">
-						<span class="navbar-burger navbar-line1"></span>
-						<span class="navbar-burger navbar-line2"></span>
-						<span class="navbar-burger navbar-line3"></span>
+			<div class="swiper-slide section-1">
+				<div class="overlay-1">
+				
+					<img 
+						class="birds"
+						src="./assets/images/3birds-1.png" alt=""
+						style="
+						width: 300px;
+						position: absolute;
+						top: 10%;
+						right: 20%;
+					">
+					<div class="story" data-swiper-parallax="100"  data-swiper-parallax-opacity="0" >
+						<h1 class="story-title">
+							<span class="story-cursive-lined effects" >Vi</span>
+							är
+							<span class="story-bold" data-swiper-parallax="-40%">3Little</span>
+							<span class="story-cursive-lined">Birds</span>
+						</h1>
 					</div>
 				</div>
-			</nav>
-		</header>
-		<div class="navbar-menu">
-			<ul class="navbar-menu-items">
-				<li><a href="about.html">Om Oss</a></li>
-				<li><a href="contact.html">Kontakta Oss</a></li>
-				<li><a href="privacy.html">Privacy</a></li>
-			</ul>
-		</div>
+			</div>
+			<div class="swiper-slide section-2">
+				<div class="overlay-2">
+					<img 
+						class="birds2"
+						src="./assets/images/3birds-1.png" alt=""
+						style="
+						width: 300px;
+						position: absolute;
+						top: 30%;
+						left: 20%;
+					">
+					<div class="story-right" data-swiper-parallax="-150" data-swiper-parallax-opacity="0">
+						<blockquote style="right:0;"></blockquote>
+						<h1 class="story-title">
+							There were
+							<span class="story-bold">doors</span>
+							all
+							<span class="story-cursive">around</span>
+							the <span class="story-lined">hall</span>,
+							but they were
+							<span class="story-cursive-lined">all</span>
+							<span class="story-bold">locked</span>.
+						</h1>
 
-		<div class="swiper-slide section-1">
-			<div class="overlay-1">
-			
-				<img 
-					class="birds"
-					src="./assets/images/3birds-1.png" alt=""
-					style="
-					width: 300px;
-					position: absolute;
-					top: 10%;
-					right: 20%;
-				">
-				<div class="story" data-swiper-parallax="100"  data-swiper-parallax-opacity="0" >
-					<h1 class="story-title">
-						<span class="story-cursive-lined effects" >Vi</span>
-						är
-						<span class="story-bold" data-swiper-parallax="-40%">3Little</span>
-						<span class="story-cursive-lined">Birds</span>
-					</h1>
+						<p class="story-lead-right">
+							When faced with manifold
+							<span class="story-bold">business choices,</span>
+							making the right ones can be tough. We can help ypu find and unlock
+							the right door and we'll adjust our own size to pass through with you.
+						</p>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="swiper-slide section-2">
-			<div class="overlay-2">
-				<img 
-					class="birds2"
-					src="./assets/images/3birds-1.png" alt=""
-					style="
-					width: 300px;
-					position: absolute;
-					top: 30%;
-					left: 20%;
-				">
-				<div class="story-right" data-swiper-parallax="-150" data-swiper-parallax-opacity="0">
-					<blockquote style="right:0;"></blockquote>
-					<h1 class="story-title">
-						There were
-						<span class="story-bold">doors</span>
-						all
-						<span class="story-cursive">around</span>
-						the <span class="story-lined">hall</span>,
-						but they were
-						<span class="story-cursive-lined">all</span>
-						<span class="story-bold">locked</span>.
-					</h1>
+			<div class="swiper-slide section-3">
+				<div class="overlay-3">
+					<img 
+						class="birds3"
+						src="./assets/images/3birds-1.png" alt=""
+						style="
+						width: 300px;
+						position: absolute;
+						top: 20%;
+						right: 20%;
+					">
+					<div class="story-left" data-swiper-parallax="-150" data-swiper-parallax-opacity="0">
+						<blockquote style="left:0;"></blockquote>
+						<h1 class="story-title">
+							<span class="story-cursive-lined">Would</span>
+							you
+							<span class="story-bold">tell</span>
+							me, please
+							<span class="story-cursive-lined">wich</span>
+							the <span class="story-bold">way</span>,
+							I ought to
+							<span class="story-cursive-lined">go</span>
+							from,
+							<span class="story-bold">here</span>?
+						</h1>
 
-					<p class="story-lead-right">
-						When faced with manifold
-						<span class="story-bold">business choices,</span>
-						making the right ones can be tough. We can help ypu find and unlock
-						the right door and we'll adjust our own size to pass through with you.
-					</p>
+						<p class="story-lead-left">
+							Thanks to our knowlageable and
+							<span class="story-bold">reliable experts,</span>
+							if you need a guide to develop your business in a field that is a bit
+							of a mystery, we can defenitly provide better derections 
+							than the Cheshire Cat...
+						</p>
+					</div>
 				</div>
 			</div>
+			<div class="swiper-slide section-4">Slide 4</div>
+			<div class="swiper-slide section-5">Slide 5</div>
 		</div>
-		<div class="swiper-slide section-3">
-			<div class="overlay-3">
-				<img 
-					class="birds3"
-					src="./assets/images/3birds-1.png" alt=""
-					style="
-					width: 300px;
-					position: absolute;
-					top: 20%;
-					right: 20%;
-				">
-				<div class="story-left" data-swiper-parallax="-150" data-swiper-parallax-opacity="0">
-					<blockquote style="left:0;"></blockquote>
-					<h1 class="story-title">
-						<span class="story-cursive-lined">Would</span>
-						you
-						<span class="story-bold">tell</span>
-						me, please
-						<span class="story-cursive-lined">wich</span>
-						the <span class="story-bold">way</span>,
-						I ought to
-						<span class="story-cursive-lined">go</span>
-						from,
-						<span class="story-bold">here</span>?
-					</h1>
+		<!-- Add Pagination -->
+		<div class="swiper-pagination"></div>
 
-					<p class="story-lead-left">
-						Thanks to our knowlageable and
-						<span class="story-bold">reliable experts,</span>
-						if you need a guide to develop your business in a field that is a bit
-						of a mystery, we can defenitly provide better derections 
-						than the Cheshire Cat...
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="swiper-slide section-4">Slide 4</div>
-		<div class="swiper-slide section-5">Slide 5</div>
+		<div class="swiper-scrollbar"></div>
 	</div>
-	<!-- Add Pagination -->
-	<div class="swiper-pagination"></div>
-
-	<div class="swiper-scrollbar"></div>
-</div>
 
 <!-- Swiper JS -->
 <script src="./lib/main.js"></script>

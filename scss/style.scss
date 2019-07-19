@@ -1,6 +1,7 @@
 //---------------------
 // Imports
 @import 'config';
+@import 'utilities';
 
 
 
@@ -38,7 +39,7 @@
         z-index: -1;
         opacity: 0;
         position: absolute;
-        top: 0vh;
+        top: 0;
         left: 0;
         right: 0;
         margin: 0 auto;
@@ -145,7 +146,7 @@
 }
 
 //---------------------
-// Slides sections
+// Slides sections & overlays
 .overlay-1 {
     position: absolute;
     top: 0;
@@ -174,7 +175,7 @@
     background-image: linear-gradient(to top, #da7b13, #dc8210, #dd890e, #df900c, #e0970a, #d2a20c, #c2ac19, #b3b52a, #90c04d, #6cc872, #46cc96, #1ecfb8);
 }
 .section-1 {
-    background-image: url('https://jhelander.github.io/test/assets/images/section1.png');
+    background: url('./assets/images/section1.png');
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
@@ -184,13 +185,13 @@
     
 }
 .section-2 {
-    background-image: url('./assets/images/section2.png');
+    background: url('./assets/images/section2.png');
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
 }
 .section-3 {
-    background-image: url('./assets/images/section3.png');
+    background: url('./assets/images/section3.png');
     position: relative;
     background-position: right;
     background-repeat: no-repeat;
@@ -440,7 +441,7 @@ blockquote {
     position: absolute;
     top: -8%;
     @media (min-width: 250px) and (max-width: 670px) {
-        top: -12%;
+        top: -10%;
     }
 }
 blockquote:before {
@@ -457,55 +458,6 @@ blockquote:after {
 }
 
 
-//----------------------
-// Site images effects
-.birds {
-    animation: birds infinite 10s;
-}
-@keyframes birds {
-    0% {
-        top: 10%;
-    }
-    50% {
-        right: 21%;
-        top: 11%;
-    }
-    100% {
-        right: 20%;
-        top: 10%;
-    }
-}
-.birds2 {
-    animation: birds2 infinite 10s;
-}
-@keyframes birds2 {
-    0% {
-        top: 30%;
-    }
-    50% {
-        left: 21%;
-        top: 31%;
-    }
-    100% {
-        left: 20%;
-        top: 30%;
-    }
-}
-.birds3 {
-    animation: birds3 infinite 10s;
-}
-@keyframes birds3 {
-    0% {
-        top: 20%;
-    }
-    50% {
-        right: 21%;
-        top: 21%;
-    }
-    100% {
-        right: 20%;
-        top: 20%;
-    }
-}
+
 
 

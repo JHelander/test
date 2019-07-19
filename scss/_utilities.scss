@@ -1,0 +1,91 @@
+//---------------------
+// Site Loader
+.main {
+    transition: opacity 2s ease-in;
+    opacity: 0;
+}
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: #f8f8f8;
+    span {
+        display: inline-block;
+        background-color: purple;
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        margin: 0 8px;
+        transform: translate3d(0);
+        animation: bounce 0.6s infinite alternate;
+        
+        &:nth-child(2) {
+            background-color: palevioletred;
+            animation-delay: 0.2s;
+        }
+        
+        &:nth-child(3) {
+            animation-delay: 0.4s;
+
+        }
+    }
+}
+@keyframes bounce {
+    to {
+        width: 16px;
+        height: 16px;
+        transform: translate3d(0, -16, 0);
+    }
+}
+
+//----------------------
+// Site images effects
+.birds {
+    animation: birds infinite alternate 10s;
+}
+@keyframes birds {
+    0% {
+        top: 10%;
+    }
+    50% {
+        right: 21%;
+        top: 11%;
+    }
+    100% {
+        right: 20%;
+        top: 10%;
+    }
+}
+.birds2 {
+    animation: birds2 infinite alternate 10s;
+}
+@keyframes birds2 {
+    0% {
+        top: 30%;
+    }
+    50% {
+        left: 21%;
+        top: 31%;
+    }
+    100% {
+        left: 20%;
+        top: 30%;
+    }
+}
+.birds3 {
+    animation: birds3 infinite alternate 10s;
+}
+@keyframes birds3 {
+    0% {
+        top: 20%;
+    }
+    50% {
+        right: 21%;
+        top: 21%;
+    }
+    100% {
+        right: 20%;
+        top: 20%;
+    }
+}
