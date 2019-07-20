@@ -89,3 +89,114 @@
         top: 20%;
     }
 }
+.swiper-slide-active .story-title {
+    position: relative;
+    animation: story 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    color: rgba(255,255,255,0);
+
+    @keyframes story {
+        0% {
+            color: rgba(255,255,255,0);
+        }
+        100% {
+            color: rgba(255,255,255,1);
+        }
+    }
+}
+.swiper-slide-active .story-bold {
+    position: relative;
+    animation: storyBold 1s;
+    animation-delay: .3s;
+    top: 0;
+
+    @keyframes storyBold {
+        0% {
+            top: -100px
+        }
+        100% {
+            top: 0px
+        }
+    }
+}
+.swiper-slide-active .story-cursive {
+    position: relative;
+    animation: storyCursive 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    color: rgba(255,255,255,0);
+
+    @keyframes storyCursive {
+        0% {
+            color: rgba(255,255,255,0);
+        }
+        100% {
+            color: rgba(255,255,255,1);
+        }
+    }
+}
+.swiper-slide-active .story-cursive-lined {
+    position: relative;
+    animation: storyCursiveLined 1s;
+    top: 0;
+
+    @keyframes storyCursiveLined {
+        0% {
+            top: 200px
+        }
+        100% {
+            top: 0px
+        }
+    }
+}
+.swiper-slide-active .story-lined {
+    position: relative;
+    animation: storyLined 1s;
+    top: 0;
+
+    @keyframes storyLined {
+        0% {
+            left: -100px
+        }
+        100% {
+            left: 0px
+        }
+    }
+}
+.swiper-slide-active .story-lead-left {
+    position: relative;
+    animation: storyLeadLeft 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    color: rgba(255,255,255,0);
+
+    @keyframes storyLeadLeft {
+        0% {
+            color: rgba(255,255,255,0);
+            left: -100px;
+        }
+        100% {
+            color: rgba(255,255,255,1);
+            left: 0;
+        }
+    }
+}
+.swiper-slide-active .story-lead-right {
+    position: relative;
+    animation: storyLeadRight 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    color: rgba(255,255,255,0);
+
+    @keyframes storyLeadRight {
+        0% {
+            color: rgba(255,255,255,0);
+            right: -100px;
+        }
+        100% {
+            color: rgba(255,255,255,1);
+            right:0;
+        }
+    }
+}

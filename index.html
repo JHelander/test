@@ -19,7 +19,7 @@
 	<span></span>
 </div>
 	<!-- Swiper -->
-	<div class="main swiper-container">
+	<div class="main swiper-container ">
 		<div class="swiper-wrapper">
 			<header>
 				<nav class="navbar">
@@ -56,8 +56,9 @@
 					">
 					<div class="story" data-swiper-parallax="100"  data-swiper-parallax-opacity="0" >
 						<h1 class="story-title">
-							<span class="story-cursive-lined effects" >Vi</span>
+							<span class="story-cursive-lined" >Vi</span>
 							är
+							
 							<span class="story-bold" data-swiper-parallax="-40%">3Little</span>
 							<span class="story-cursive-lined">Birds</span>
 						</h1>
@@ -115,7 +116,7 @@
 							you
 							<span class="story-bold">tell</span>
 							me, please
-							<span class="story-cursive-lined">wich</span>
+							<span class="story-lined">wich</span>
 							the <span class="story-bold">way</span>,
 							I ought to
 							<span class="story-cursive-lined">go</span>
@@ -153,8 +154,6 @@ var swiper = new Swiper('.swiper-container', {
 	direction: 'vertical',
 	speed: 1400,
 	slidesPerView: 1,
-	watchSlidesProgress: true,
-	watchSlidesVisibility: true,
 	freeModeMomentum: true,
 	longSwipes: true,
 	longSwipesRatio: 0.1,
@@ -163,18 +162,28 @@ var swiper = new Swiper('.swiper-container', {
 	scrollbarSnapOnRelease: true,
 	parallax: true,
 	effect: 'fade',
+	observer: true,
+	observeParents: true,
+	observeSlideChildren: true,
 	fadeEffect: {
-    crossFade: true
-  },
-	
-
-
+    	crossFade: true
+  	},
 	pagination: {
 		el: '.swiper-pagination',
 		clickable: true,
 	},
 	
 });
+var card = new Swiper('.story-bold', '.story-lead', '.story-cursive', '.story-lined', '.story-cursive-lined', {
+	
+	on: {
+		reachBeginning: function() {
+			this.$el.addClass('.swiper-slide-active');
+		}
+	}
+});
+mySwiper.gerTranslate();
+
 
 </script>
 </body>
