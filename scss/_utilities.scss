@@ -40,7 +40,7 @@
 }
 
 //----------------------
-// Site images effects
+// Site Animations & Transitions
 .birds {
     animation: birds infinite alternate 10s;
 }
@@ -91,7 +91,7 @@
 }
 .swiper-slide-active .story-title {
     position: relative;
-    animation: story 1s;
+    animation: story 2s;
     animation-fill-mode: forwards;
     animation-delay: 0.5s;
     color: rgba(255,255,255,0);
@@ -124,7 +124,7 @@
     position: relative;
     animation: storyCursive 1s;
     animation-fill-mode: forwards;
-    animation-delay: 0.5s;
+    animation-delay: 1.5s;
     color: rgba(255,255,255,0);
 
     @keyframes storyCursive {
@@ -140,6 +140,7 @@
     position: relative;
     animation: storyCursiveLined 1s;
     top: 0;
+    
 
     @keyframes storyCursiveLined {
         0% {
@@ -147,6 +148,35 @@
         }
         100% {
             top: 0px
+        }
+    }
+    &:after {
+        animation: storyLines 1s ease-out .8s;
+        animation-fill-mode: forwards;
+        animation-delay: .5s;
+        transform-origin: center;
+        
+        @keyframes storyLines {
+            0% {
+                width: 0;
+                transform-origin: center;
+                
+            }
+            50% {
+                width: 75%;
+                transform: rotate(390deg);
+            }
+            75% {
+                width: 112%;
+                transform-origin: center;
+                transform: rotate(330deg);
+            }
+            100% {
+                width: 100%;
+                transform-origin: center;
+                transform: rotate(360deg);
+            }
+            
         }
     }
 }
@@ -163,12 +193,33 @@
             left: 0px
         }
     }
+    &:after {
+        position: absolute;
+        animation: storyLines2 1s;
+        animation-fill-mode: forwards;
+        animation-delay: .7s;
+        bottom: .12em;
+        width: 0%;
+        opacity: 0;
+
+        @keyframes storyLines2 {
+            0% {
+                left: -200px;
+                opacity: 0;
+            }
+            100% {
+                left: 0px;
+                opacity: 1;
+                width: 100%;
+            }
+        }
+    }
 }
 .swiper-slide-active .story-lead-left {
     position: relative;
     animation: storyLeadLeft 1s;
     animation-fill-mode: forwards;
-    animation-delay: 0.5s;
+    animation-delay: 0.8s;
     color: rgba(255,255,255,0);
 
     @keyframes storyLeadLeft {
@@ -181,12 +232,29 @@
             left: 0;
         }
     }
+    &:before {
+        animation: storyLeadLeftLine 1s;
+        animation-fill-mode: forwards;
+        animation-delay: 1.7s;
+        position: absolute;
+
+        @keyframes storyLeadLeftLine {
+            0% {
+                left:0;
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+                left:0;
+            }
+        }
+    }
 }
 .swiper-slide-active .story-lead-right {
     position: relative;
     animation: storyLeadRight 1s;
     animation-fill-mode: forwards;
-    animation-delay: 0.5s;
+    animation-delay: 0.8s;
     color: rgba(255,255,255,0);
 
     @keyframes storyLeadRight {
@@ -199,4 +267,40 @@
             right:0;
         }
     }
+    &:before {
+        animation: storyLeadRightLine 1s;
+        animation-fill-mode: forwards;
+        animation-delay: 1.7s;
+        position: absolute;
+
+        @keyframes storyLeadRightLine {
+            0% {
+                right:0;
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+                right:0;
+            }
+        }
+    }
 }
+    
+
+.swiper-slide-active blockquote {
+    animation: storyQoutes 1s;
+    animation-fill-mode: forwards;
+    position: absolute;
+
+    @keyframes storyQoutes {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+
+
