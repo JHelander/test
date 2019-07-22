@@ -24,10 +24,8 @@
             background-color: palevioletred;
             animation-delay: 0.2s;
         }
-        
         &:nth-child(3) {
             animation-delay: 0.4s;
-
         }
     }
 }
@@ -40,7 +38,7 @@
 }
 
 //----------------------
-// Site Animations & Transitions
+// Animations
 .birds {
     animation: birds infinite alternate 10s;
 }
@@ -57,6 +55,7 @@
         top: 10%;
     }
 }
+
 .birds2 {
     animation: birds2 infinite alternate 10s;
 }
@@ -73,6 +72,7 @@
         top: 30%;
     }
 }
+
 .birds3 {
     animation: birds3 infinite alternate 10s;
 }
@@ -89,6 +89,7 @@
         top: 20%;
     }
 }
+
 .swiper-slide-active .story-title {
     position: relative;
     animation: story 2s;
@@ -105,6 +106,7 @@
         }
     }
 }
+
 .swiper-slide-active .story-bold {
     position: relative;
     animation: storyBold 1s;
@@ -120,6 +122,7 @@
         }
     }
 }
+
 .swiper-slide-active .story-cursive {
     position: relative;
     animation: storyCursive 1s;
@@ -136,12 +139,12 @@
         }
     }
 }
+
 .swiper-slide-active .story-cursive-lined {
     position: relative;
     animation: storyCursiveLined 1s;
     top: 0;
     
-
     @keyframes storyCursiveLined {
         0% {
             top: 200px
@@ -180,6 +183,7 @@
         }
     }
 }
+
 .swiper-slide-active .story-lined {
     position: relative;
     animation: storyLined 1s;
@@ -215,6 +219,7 @@
         }
     }
 }
+
 .swiper-slide-active .story-lead-left {
     position: relative;
     animation: storyLeadLeft 1s;
@@ -250,6 +255,7 @@
         }
     }
 }
+
 .swiper-slide-active .story-lead-right {
     position: relative;
     animation: storyLeadRight 1s;
@@ -285,11 +291,11 @@
         }
     }
 }
-    
 
 .swiper-slide-active blockquote {
     animation: storyQoutes 1s;
     animation-fill-mode: forwards;
+    animation-delay: .3s;
     position: absolute;
 
     @keyframes storyQoutes {

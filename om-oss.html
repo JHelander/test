@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Link Swiper's CSS -->
+		<link rel="stylesheet" href="./lib/plugins/swiper.min.css">
+		<link rel="stylesheet" href="./assets/css/style.min.css">
+    <title>3LittleBirds | Om Oss</title>
+</head>
+<body>
+    <!-- Site loader -->
+	<div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="navbar-logo"><img src="./assets/images/logo.png" alt="Logo"></a>
+            <div style="display:flex; align-items: center;">
+                <h1 class="navbar-text">Meny</h1>
+                <div class="navbar-toggle" onclick="toggleMenu()">
+                    <span class="navbar-burger navbar-line1"></span>
+                    <span class="navbar-burger navbar-line2"></span>
+                    <span class="navbar-burger navbar-line3"></span>
+                </div>
+            </div>
+            
+        </nav>
+    </header>
+    <div class="navbar-menu">
+        <ul class="navbar-menu-items">
+            <li><a href="om-oss.html">Om Oss</a></li>
+            <li><a href="contact.html">Kontakta Oss</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+        </ul>
+    </div>
+    
+    <!-- Swiper -->
+    <div class="main swiper-container swipe-control">
+        <div class="swiper-wrapper one-swipe">
+            
+            <!-- Swiper Slides -->
+            <div class="swiper-slide ">
+                <div class="overlay-1">
+                    <img 
+                        class="birds"
+                        src="./assets/images/3birds-1.png" alt=""
+                        style="
+                        width: 300px;
+                        position: absolute;
+                        top: 10%;
+                        right: 20%;
+                    ">
+                    <div class="story" data-swiper-parallax="100"  data-swiper-parallax-opacity="0" >
+                        <h1 class="story-title">
+                            Om Oss
+                        </h1>
+                    </div>
+                    <section class="story-info">
+                        <p class="story-info-paragraph">
+                            <span class="story-info-paragraph-bold">Lorem ipsum </span>
+                            dolor sit amet consectetur adipisicing elit. Eveniet, culpa voluptas. Temporibus dicta saepe eveniet minus, facilis molestias harum perspiciatis autem voluptate consequatur! Mollitia blanditiis assumenda at commodi molestias aliquam est illum! Quisquam blanditiis quasi cum harum, cumque molestiae ipsum odit esse illo corporis nisi, quae rerum!
+                            <br><br>
+                            <span class="story-info-paragraph-bold">Debitis </span>
+                            veritatis voluptates laborum sequi odit eum voluptate rerum, dolorem doloribus expedita sed. Aut aperiam beatae enim, laborum recusandae, pariatur ducimus iure maxime sint ipsum natus vel exercitationem dolore quam consequuntur mollitia in rem dolorem excepturi id officia saepe aliquam? Quod soluta labore veritatis, ipsa sint aut accusamus optio magni quibusdam fugiat alias.
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </div>
+        
+        <div class="swiper-scrollbar"></div>
+    </div>  
+
+    <!-- Swiper JS -->
+	<script src="./lib/plugins/swiper.min.js"></script>
+	<script src="./lib/oneswipe.swiper.js"></script>
+	<script src="./lib/app.js"></script>
+</body>
+</html>

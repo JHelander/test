@@ -2,49 +2,49 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>3Little Birds Konsulting</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
 		<!-- Link Swiper's CSS -->
-		<link rel="stylesheet" href="./lib/swiper.min.css">
-		<link rel="stylesheet" href="./style.css">
-
-
+		<link rel="stylesheet" href="./lib/plugins/swiper.min.css">
+		<link rel="stylesheet" href="./assets/css/style.min.css">
+		<title>3Little Birds Konsulting</title>
 	</head>
 <body>
-<!-- Site loader -->
-<div class="loader">
-	<span></span>
-	<span></span>
-	<span></span>
-</div>
-	<!-- Swiper -->
-	<div class="main swiper-container ">
-		<div class="swiper-wrapper">
-			<header>
-				<nav class="navbar">
-					<a href="index.html" class="navbar-logo"><img src="./assets/images/logo.png" alt="Logo"></a>
-					<div style="display:flex; align-items: center;">
-						<li style="margin-right: 1em;"> Meny</li>
-						<div class="navbar-toggle" onclick="toggleMenu()">
-							<span class="navbar-burger navbar-line1"></span>
-							<span class="navbar-burger navbar-line2"></span>
-							<span class="navbar-burger navbar-line3"></span>
-						</div>
-					</div>
-				</nav>
-			</header>
-			<div class="navbar-menu">
-				<ul class="navbar-menu-items">
-					<li><a href="about.html">Om Oss</a></li>
-					<li><a href="contact.html">Kontakta Oss</a></li>
-					<li><a href="privacy.html">Privacy</a></li>
-				</ul>
+	<!-- Site loader -->
+	<div class="loader">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	<!-- Navigation -->
+	<header>
+		<nav class="navbar">
+			<a href="index.html" class="navbar-logo"><img src="./assets/images/logo.png" alt="Logo"></a>
+			<div style="display:flex; align-items: center;">
+				<h1 class="navbar-text">Meny</h1>
+				<div class="navbar-toggle" onclick="toggleMenu()">
+					<span class="navbar-burger navbar-line1"></span>
+					<span class="navbar-burger navbar-line2"></span>
+					<span class="navbar-burger navbar-line3"></span>
+				</div>
 			</div>
+		</nav>
+	</header>
+	<div class="navbar-menu">
+		<ul class="navbar-menu-items">
+			<li><a href="om-oss.html">Om Oss</a></li>
+			<li><a href="contact.html">Kontakta Oss</a></li>
+			<li><a href="privacy.html">Privacy</a></li>
+		</ul>
+	</div>
+	<!-- Swiper -->
+	<div class="main swiper-container">
+		<div class="swiper-wrapper landing">
+			
 
+			<!-- Swiper Slides -->
 			<div class="swiper-slide section-1">
 				<div class="overlay-1">
-				
 					<img 
 						class="birds"
 						src="./assets/images/3birds-1.png" alt=""
@@ -134,8 +134,68 @@
 					</div>
 				</div>
 			</div>
-			<div class="swiper-slide section-4">Slide 4</div>
-			<div class="swiper-slide section-5">Slide 5</div>
+			<div class="swiper-slide section-4">
+				<div class="overlay-4">
+					<img 
+						class="birds2"
+						src="./assets/images/3birds-1.png" alt=""
+						style="
+						width: 300px;
+						position: absolute;
+						top: 30%;
+						left: 20%;
+					">
+					<div class="story-right" data-swiper-parallax="-150" data-swiper-parallax-opacity="0">
+						<blockquote style="right:0;"></blockquote>
+						<h1 class="story-title">
+							<span class="story-bold">Never</span>
+							<span class="story-cursive-lined">heard</span>
+							of
+							<span class="story-bold">uglifying!</span>
+							You
+							<span class="story-bold">know</span>
+							<span class="story-cursive-lined">what</span>
+							to
+							<span class="story-bold">beautify</span>
+							
+							<span class="story-cursive">is</span>,
+							I suppose?
+						</h1>
+
+						<p class="story-lead-right">
+							<span class="story-bold">Clear comminucation</span>
+							is the key. Whatever the business languages spoken by you and your associates, 
+							we will understand and respond coherently, so that we can move forward together.
+						</p>
+					</div>
+				</div>
+			
+			</div>
+			<div class="swiper-slide section-5">
+				<div class="overlay-5">
+					<img 
+						class="birds3"
+						src="./assets/images/3birds-1.png" alt=""
+						style="
+						width: 300px;
+						position: absolute;
+						top: 20%;
+						right: 20%;
+					">
+					<div class="story-center" data-swiper-parallax="-150" data-swiper-parallax-opacity="0">
+						<h1 class="story-title">
+							<span class="story-cursive">Stop</span>
+							the <span class="story-bold">feeling</span>
+							<span class="story-lined">lost</span>,
+							take
+							<span class="story-cursive-lined">charge</span>
+							of your
+							<span class="story-bold">business</span>
+							<span class="story-cursive-lined">choices</span>.
+						</h1>
+					</div>
+				</div>	
+			</div>	
 		</div>
 		<!-- Add Pagination -->
 		<div class="swiper-pagination"></div>
@@ -143,48 +203,9 @@
 		<div class="swiper-scrollbar"></div>
 	</div>
 
-<!-- Swiper JS -->
-<script src="./lib/main.js"></script>
-<script src="./lib/swiper.min.js"></script>
-
-<!-- Initialize Swiper -->
-<script>
-var swiper = new Swiper('.swiper-container', {
-	initialSlide: 0,
-	direction: 'vertical',
-	speed: 1400,
-	slidesPerView: 1,
-	freeModeMomentum: true,
-	longSwipes: true,
-	longSwipesRatio: 0.1,
-	scrollbar: true,
-	scrollbarDraggable: true,
-	scrollbarSnapOnRelease: true,
-	parallax: true,
-	effect: 'fade',
-	observer: true,
-	observeParents: true,
-	observeSlideChildren: true,
-	fadeEffect: {
-    	crossFade: true
-  	},
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-	},
-	
-});
-var card = new Swiper('.story-bold', '.story-lead', '.story-cursive', '.story-lined', '.story-cursive-lined', {
-	
-	on: {
-		reachBeginning: function() {
-			this.$el.addClass('.swiper-slide-active');
-		}
-	}
-});
-mySwiper.gerTranslate();
-
-
-</script>
+	<!-- Swiper JS -->
+	<script src="./lib/plugins/swiper.min.js"></script>
+	<script src="./lib/main.swiper.js"></script>
+	<script src="./lib/app.js"></script>
 </body>
 </html>
