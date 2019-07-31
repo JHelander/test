@@ -37,6 +37,25 @@
     }
 }
 
+
+// Buttons
+.btn-primary {
+    outline: none;
+    background: transparent;
+    border: 1px solid white;
+    padding: 20px 30px;
+    margin-top: 2em;
+    color: white;
+    font-size: .9em;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+        background: rgba(255,255,255,.3);
+        transition: .3s all ease-in-out;
+    }
+}
 //----------------------
 // Animations
 .birds {
